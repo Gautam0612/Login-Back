@@ -8,7 +8,7 @@ const User = require("./Schemas");
 // express.use(cors());
 
 
-router.post("/signin", (req, res) => {
+router.post("signin", (req, res) => {
     const user = new User({
         name: req.body.name,
         email: req.body.email,
